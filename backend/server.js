@@ -6,14 +6,16 @@ const workoutRoutes = require('./routes/workouts')
 // express app
 const app = express()
 
-// middleware (logger)
+// middleware
+app.use(express.json())
+
 app.use((req, res, next) => {
     console.log(req.path, req.method)
     next()
 })
 
 // routes
-app.use('api/workouts', workoutRoutes)
+app.use('/api/workouts', workoutRoutes)
 
 // listen for requests
 app.listen(process.env.PORT, () => {
