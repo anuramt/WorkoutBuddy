@@ -42,8 +42,6 @@ build/Release
 node_modules/
 jspm_packages/
 
-backend/node_modules
-
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
 
@@ -80,8 +78,6 @@ web_modules/
 .env.test.local
 .env.production.local
 .env.local
-
-backend/.env
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache
